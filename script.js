@@ -1,44 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.nav-toggle');
-    const navigation = document.getElementById('primary-navigation');
-
-    if (menuToggle && navigation) {
-        const closeMenu = () => {
-            menuToggle.setAttribute('aria-expanded', 'false');
-            menuToggle.setAttribute('aria-label', menuToggle.dataset.openLabel);
-            navigation.classList.remove('is-open');
-        };
-
-        menuToggle.addEventListener('click', () => {
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', String(!isExpanded));
-            menuToggle.setAttribute(
-                'aria-label',
-                isExpanded ? menuToggle.dataset.openLabel : menuToggle.dataset.closeLabel
-            );
-            navigation.classList.toggle('is-open', !isExpanded);
-        });
-
-        navigation.addEventListener('click', (event) => {
-            if (event.target instanceof HTMLAnchorElement) {
-                closeMenu();
-            }
-        });
-
-        document.addEventListener('click', (event) => {
-            if (!menuToggle.contains(event.target) && !navigation.contains(event.target)) {
-                closeMenu();
-            }
-        });
-
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
-                closeMenu();
-                menuToggle.focus();
-            }
-        });
-    }
-
     const langSelect = document.getElementById('langSwitcher');
 
     if (langSelect) {
