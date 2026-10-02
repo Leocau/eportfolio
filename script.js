@@ -1,4 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if (menuButton && navLinks) {
+        const setMenuOpen = (isOpen) => {
+            menuButton.classList.toggle('active', isOpen);
+            navLinks.classList.toggle('active', isOpen);
+            menuButton.setAttribute('aria-expanded', String(isOpen));
+            menuButton.setAttribute(
+                'aria-label',
+                isOpen
+                    ? (document.documentElement.lang === 'fr' ? 'Fermer le menu' : 'Close navigation menu')
+                    : (document.documentElement.lang === 'fr' ? 'Ouvrir le menu' : 'Open navigation menu')
+            );
+        };
+
+        menuButton.addEventListener('click', () => {
+            setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true');
+        });
+
+        navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => setMenuOpen(false));
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                setMenuOpen(false);
+            }
+        });
+    }
+
     const langSelect = document.getElementById('langSwitcher');
 
     if (langSelect) {
