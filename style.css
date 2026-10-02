@@ -361,6 +361,14 @@ button[type="submit"]:hover {
     color: var(--header-footer-bg);
 }
 
+citation {
+    font-style: italic;
+    color: var(--accent-color);
+    margin-top: 1rem;
+    display: block;
+}
+
+
 /* --- PIED DE PAGE (Foncé et distinct) --- */
 footer {
     background-color: var(--header-footer-bg);
