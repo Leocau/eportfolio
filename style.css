@@ -352,8 +352,83 @@ footer {
     padding: 2.5rem;
     border-top: 3px solid var(--accent-color);
 }
+/* Style du menu (Version bureau) */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
 
-/* --- RESPONSIVE MOBILE --- */
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #f39c12; /* Couleur au survol */
+}
+
+/* Style du bouton Hamburger (caché sur bureau) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* ========================================= */
+/* Responsive : Écrans mobiles et tablettes  */
+/* ========================================= */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Afficher le bouton */
+    }
+
+    .nav-links {
+        position: fixed;
+        left: -100%; /* Menu caché hors de l'écran à gauche */
+        top: 70px; /* Sous la navbar */
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        padding: 2rem 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Classe ajoutée par le JS pour ouvrir le menu */
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    /* Animation du bouton hamburger pour former une croix (X) */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+/* --- RESPONSIVE MOBILE --- 
 @media (max-width: 768px) {
     #presentation {
         flex-direction: column;
@@ -369,4 +444,4 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
+}*/
