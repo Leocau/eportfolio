@@ -1,0 +1,66 @@
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    #presentation {
+        flex-direction: column;
+        text-align: center;
+        border-left: none;
+        border-top: 5px solid var(--header-footer-bg);
+    }
+    nav {
+        min-height: 60px;
+        padding: 0.5rem 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 0;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 63px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 1rem 0;
+        background-color: var(--header-footer-bg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0.3s ease;
+    }
+
+    nav ul.active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul a {
+        display: block;
+        padding: 0.75rem 1rem;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .lang-switcher {
+        order: 1;
+        margin-left: auto;
+    }
+}

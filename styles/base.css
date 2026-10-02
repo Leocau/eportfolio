@@ -1,0 +1,37 @@
+/* --- POLICES ET VARIABLES --- */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --header-footer-bg: #1e293b; /* Bleu ardoise très foncé, solide et industriel */
+    --body-bg: #e2e8f0; /* Gris clair métallique pour le fond */
+    --card-bg: #ffffff; /* Blanc pur pour les blocs de contenu */
+    --accent-color: #d97706; /* Orange "cuivre/laiton" pour l'électronique/mécanique */
+    --accent-hover: #b45309;
+    --text-dark: #334155; /* Gris anthracite pour le texte principal */
+    --text-light: #f8fafc; /* Blanc pour le texte sur fond foncé */
+    --border-color: #cbd5e1;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--body-bg);
+}
+
+h1, h2, h3, .nav-links {
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

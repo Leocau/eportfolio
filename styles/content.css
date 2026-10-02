@@ -1,0 +1,144 @@
+/* --- PRÉSENTATION --- */
+#presentation {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: var(--card-bg);
+    padding: 3rem;
+    border-radius: 10px; /* Coins à peine arrondis pour un côté plus brut */
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--header-footer-bg);
+}
+
+.pict {
+    width:220px;
+    height: 220px;
+    border-radius: 4px;
+    object-fit: cover;
+    border: 3px solid var(--border-color);
+}
+
+.intro-text h2 {
+    margin-bottom: 1rem;
+}
+.intro-text h2::before, .intro-text h2::after {
+    display: none; /* Enlève la ligne technique sur ce titre précis */
+}
+
+/* --- TIMELINE (Expériences & Études) --- */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-left: 3px solid var(--border-color);
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+article {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    position: relative;
+    border-top: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+/* Point de repère sur l'axe (style mécanique) */
+article::before {
+    content: '';
+    position: absolute;
+    left: -2.7rem;
+    top: 2rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--body-bg);
+    border: 4px solid var(--header-footer-bg);
+}
+
+article:hover {
+    border-top: 3px solid var(--accent-color);
+}
+
+.date {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* --- COMPÉTENCES (Badges techniques) --- */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-badge {
+    background: var(--card-bg);
+    color: var(--header-footer-bg);
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.skill-badge:hover {
+    background: var(--header-footer-bg);
+    color: var(--text-light);
+    border-color: var(--header-footer-bg);
+    transform: translateY(-2px);
+}
+
+/* --- PROJETS --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card h3 {
+    color: var(--header-footer-bg);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.project-link {
+    margin-top: auto;
+    padding-top: 1.5rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.project-link:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+citation {
+    font-style: italic;
+    color: var(--accent-color);
+    margin-top: 1rem;
+    display: block;
+}

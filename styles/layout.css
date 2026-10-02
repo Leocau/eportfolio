@@ -1,0 +1,36 @@
+/* --- STRUCTURE GLOBALE --- */
+main {
+    margin-top: 90px;
+    min-height: calc(100vh - 90px - 100px); /* Assure que le footer reste en bas */
+}
+
+section {
+    padding: 5rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: var(--header-footer-bg);
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Carré orange avant les titres (style plan technique) */
+section h2::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--accent-color);
+}
+
+section h2::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--border-color);
+}
