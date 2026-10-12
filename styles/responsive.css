@@ -81,12 +81,20 @@
         margin-left: auto;
     }
 
-    .engineering-projects {
+    .engineering-page {
         padding: 2.5rem 1rem 3rem;
     }
 
-    .engineering-projects__intro h1 {
+    .engineering-page__intro h1 {
         font-size: 1.9rem;
+    }
+
+    .engineering-section > h2 {
+        font-size: 1.6rem;
+    }
+
+    .portfolio-block-grid {
+        grid-template-columns: 1fr;
     }
 
     .project-header {
