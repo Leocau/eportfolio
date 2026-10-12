@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering | My E-Portfolio</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/content.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+   <header id="accueil">
+        <b>Léo Cauet</b>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-links" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="welcome.html">Home</a></li>
+                <li><a href="engineering.html">Engineering</a></li>
+                <li><a href="international_mobility.html">International Mobility</a></li>
+                <li><a href="civic_engagements.html">Civic Engagement</a></li>
+                <li><a href="sports_and_other_activities.html">Sports and Other Activities</a></li>
+                <li><a href="professional_development.html">Professional Development</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <label for="langSwitcher" class="sr-only">Language</label>
+                <select id="langSwitcher" aria-label="Language selector">
+                    <option value="fr">FR</option>
+                    <option value="en" selected>EN</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="engineering-page">
+            <header class="engineering-page__intro">
+                <p class="project-kicker">Electronics · Energy · Automation</p>
+                <h1>Engineering</h1>
+                <p>Projects and coursework from my engineering studies.</p>
+            </header>
+
+            <section class="engineering-section" aria-labelledby="engineering-projects-title">
+                <h2 id="engineering-projects-title">Projects</h2>
+                <article class="project-container" aria-labelledby="motor-project-title">
+                    <header class="project-header">
+                        <p class="project-eyebrow">TIPE project · Control systems and motor drive</p>
+                        <h3 class="project-title" id="motor-project-title">DC motor speed control system</h3>
+                    </header>
+
+                    <div class="project-content">
+                        <section class="project-description" aria-labelledby="motor-project-description">
+                            <h4 id="motor-project-description">Description</h4>
+                            <p>
+                                Design and implementation of a complete speed-control system for a direct-current motor.
+                                The project covers the full control chain, from designing and simulating the power-control circuit
+                                to programming the feedback loop and processing encoder signals in real time to maintain a stable speed setpoint.
+                            </p>
+                        </section>
+
+                        <section class="project-keywords" aria-labelledby="motor-project-keywords">
+                            <h4 id="motor-project-keywords">Keywords</h4>
+                            <ul class="tags-list">
+                                <li>Hardware design</li>
+                                <li>Power electronics</li>
+                                <li>Control systems</li>
+                                <li>Embedded systems</li>
+                                <li>PID control</li>
+                                <li>Feedback control</li>
+                                <li>PWM signal</li>
+                            </ul>
+                        </section>
+
+                        <section class="project-materials" aria-labelledby="motor-project-materials">
+                            <h4 id="motor-project-materials">Equipment and technologies</h4>
+                            <ul class="materials-list">
+                                <li><strong>Microcontroller:</strong> Teensy 4.0</li>
+                                <li><strong>Electromechanics:</strong> DC motor, rotary encoder</li>
+                                <li><strong>Power electronics:</strong> SEPIC / buck-boost converters, MOSFET gate drivers</li>
+                                <li><strong>Programming:</strong> C++, Python</li>
+                            </ul>
+                        </section>
+                    </div>
+                </article>
+            </section>
+
+            <section class="engineering-section" aria-labelledby="engineering-courses-title">
+                <h2 id="engineering-courses-title">Courses</h2>
+                <div class="portfolio-block-grid">
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Course 01</p>
+                        <h3 class="portfolio-block__title">Course title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Course 02</p>
+                        <h3 class="portfolio-block__title">Course title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Course 03</p>
+                        <h3 class="portfolio-block__title">Course title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+       <footer>
+        <p>&copy; 2026 Léo Cauet. All rights reserved.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/léo-cauet-058898436" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <!-- <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> |  -->
+           <!-- <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">X (Twitter)</a> -->
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Portfolio</title>
+    <title>Engineering | My E-Portfolio</title>
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="stylesheet" href="../styles/layout.css">
@@ -22,7 +22,7 @@
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="welcome.html">Home</a></li>
-                <li><a href="engineering_courses.html">Engineering Courses</a></li>
+                <li><a href="engineering.html">Engineering</a></li>
                 <li><a href="international_mobility.html">International Mobility</a></li>
                 <li><a href="civic_engagements.html">Civic Engagement</a></li>
                 <li><a href="sports_and_other_activities.html">Sports and Other Activities</a></li>
@@ -39,12 +39,78 @@
         </nav>
     </header>
     <main>
-<section id="travaux">
-            <div>
-                <img class="pict" src="../panneau_travaux.png">
-                <p>Page under construction</p>
-            </div>
-        </section>
+        <div class="engineering-page">
+            <header class="engineering-page__intro">
+                <p class="project-kicker">Electronics · Energy · Automation</p>
+                <h1>Engineering</h1>
+                <p>Projects and coursework from my engineering studies.</p>
+            </header>
+
+            <section class="engineering-section" aria-labelledby="engineering-projects-title">
+                <h2 id="engineering-projects-title">Projects</h2>
+                <article class="project-container" aria-labelledby="motor-project-title">
+                    <header class="project-header">
+                        <p class="project-eyebrow">TIPE project · Control systems and motor drive</p>
+                        <h3 class="project-title" id="motor-project-title">DC motor speed control system</h3>
+                    </header>
+
+                    <div class="project-content">
+                        <section class="project-description" aria-labelledby="motor-project-description">
+                            <h4 id="motor-project-description">Description</h4>
+                            <p>
+                                Design and implementation of a complete speed-control system for a direct-current motor.
+                                The project covers the full control chain, from designing and simulating the power-control circuit
+                                to programming the feedback loop and processing encoder signals in real time to maintain a stable speed setpoint.
+                            </p>
+                        </section>
+
+                        <section class="project-keywords" aria-labelledby="motor-project-keywords">
+                            <h4 id="motor-project-keywords">Keywords</h4>
+                            <ul class="tags-list">
+                                <li>Hardware design</li>
+                                <li>Power electronics</li>
+                                <li>Control systems</li>
+                                <li>Embedded systems</li>
+                                <li>PID control</li>
+                                <li>Feedback control</li>
+                                <li>PWM signal</li>
+                            </ul>
+                        </section>
+
+                        <section class="project-materials" aria-labelledby="motor-project-materials">
+                            <h4 id="motor-project-materials">Equipment and technologies</h4>
+                            <ul class="materials-list">
+                                <li><strong>Microcontroller:</strong> Teensy 4.0</li>
+                                <li><strong>Electromechanics:</strong> DC motor, rotary encoder</li>
+                                <li><strong>Power electronics:</strong> SEPIC / buck-boost converters, MOSFET gate drivers</li>
+                                <li><strong>Programming:</strong> C++, Python</li>
+                            </ul>
+                        </section>
+                    </div>
+                </article>
+            </section>
+
+            <section class="engineering-section" aria-labelledby="engineering-courses-title">
+                <h2 id="engineering-courses-title">Courses</h2>
+                <div class="portfolio-block-grid">
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Course 01</p>
+                        <h3 class="portfolio-block__title">Course title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Course 02</p>
+                        <h3 class="portfolio-block__title">Course title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Course 03</p>
+                        <h3 class="portfolio-block__title">Course title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
        <footer>
         <p>&copy; 2026 Léo Cauet. All rights reserved.</p>

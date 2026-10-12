@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon E-Portfolio</title>
+    <title>Ingénierie | Mon E-Portfolio</title>
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/header-footer.css">
     <link rel="stylesheet" href="../styles/layout.css">
@@ -22,7 +22,7 @@
             </button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="welcome.html">Accueil</a></li>
-                <li><a href="engineering_courses.html">Cours d'Ingénierie</a></li>
+                <li><a href="engineering.html">Ingénierie</a></li>
                 <li><a href="international_mobility.html">Mobilité Internationale</a></li>
                 <li><a href="civic_engagements.html">Engagements Citoyens</a></li>
                 <li><a href="sports_and_other_activities.html">Sports et Autres Activités</a></li>
@@ -39,17 +39,24 @@
         </nav>
     </header>
     <main>
-        <section class="engineering-projects" aria-labelledby="engineering-projects-title">
+        <div class="engineering-page">
+            <header class="engineering-page__intro">
+                <p class="project-kicker">Électronique · Énergie · Automatique</p>
+                <h1>Ingénierie</h1>
+                <p>Projets réalisés et cours suivis au cours de ma formation.</p>
+            </header>
 
+            <section class="engineering-section" aria-labelledby="engineering-projects-title">
+                <h2 id="engineering-projects-title">Projets</h2>
             <article class="project-container" aria-labelledby="motor-project-title">
                 <header class="project-header">
                     <p class="project-eyebrow">Projet TIPE · Automatique et motorisation</p>
-                    <h2 class="project-title" id="motor-project-title">Asservissement et régulation de vitesse d'un moteur à courant continu</h2>
+                    <h3 class="project-title" id="motor-project-title">Asservissement et régulation de vitesse d'un moteur à courant continu</h3>
                 </header>
 
                 <div class="project-content">
                     <section class="project-description" aria-labelledby="motor-project-description">
-                        <h3 id="motor-project-description">Description</h3>
+                        <h4 id="motor-project-description">Description</h4>
                         <p>
                             Conception et réalisation d'un système complet de régulation de vitesse pour un moteur à courant continu.
                             Ce projet couvre l'intégralité de la chaîne d'action : de l'élaboration et la simulation du circuit de commande
@@ -59,7 +66,7 @@
                     </section>
 
                     <section class="project-keywords" aria-labelledby="motor-project-keywords">
-                        <h3 id="motor-project-keywords">Mots-clés</h3>
+                        <h4 id="motor-project-keywords">Mots-clés</h4>
                         <ul class="tags-list">
                             <li>Conception matérielle</li>
                             <li>Électronique de puissance</li>
@@ -72,7 +79,7 @@
                     </section>
 
                     <section class="project-materials" aria-labelledby="motor-project-materials">
-                        <h3 id="motor-project-materials">Matériel et technologies</h3>
+                        <h4 id="motor-project-materials">Matériel et technologies</h4>
                         <ul class="materials-list">
                             <li><strong>Microcontrôleur :</strong> Teensy 4.0</li>
                             <li><strong>Électromécanique :</strong> moteur à courant continu, encodeur rotatif</li>
@@ -82,7 +89,29 @@
                     </section>
                 </div>
             </article>
-        </section>
+            </section>
+
+            <section class="engineering-section" aria-labelledby="engineering-courses-title">
+                <h2 id="engineering-courses-title">Cours</h2>
+                <div class="portfolio-block-grid">
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Cours 01</p>
+                        <h3 class="portfolio-block__title">Titre du cours</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Cours 02</p>
+                        <h3 class="portfolio-block__title">Titre du cours</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Cours 03</p>
+                        <h3 class="portfolio-block__title">Titre du cours</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
        <footer>
         <p>&copy; 2026 Léo Cauet. Tous droits réservés.</p>
