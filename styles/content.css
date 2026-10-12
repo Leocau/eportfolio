@@ -291,6 +291,134 @@ article:hover {
     color: var(--header-footer-bg);
 }
 
+/* --- CV AND VIDEO PITCH --- */
+.professional-development {
+    max-width: 1100px;
+    padding: 3.5rem 2rem 5rem;
+}
+
+.professional-development__intro {
+    max-width: 760px;
+    margin-bottom: 2.5rem;
+}
+
+.professional-development__eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--accent-hover);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.professional-development__intro h1 {
+    margin-bottom: 0.75rem;
+    color: var(--header-footer-bg);
+    font-size: 2.4rem;
+    line-height: 1.1;
+}
+
+.professional-resources {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.5rem;
+}
+
+.professional-resource {
+    max-width: none;
+    margin: 0;
+    padding: 1.5rem 0 0;
+    border-top: 3px solid var(--header-footer-bg);
+}
+
+.professional-resource h2 {
+    margin-bottom: 1rem;
+    color: var(--header-footer-bg);
+    font-size: 1.6rem;
+}
+
+.professional-resource h2::before,
+.professional-resource h2::after {
+    display: none;
+}
+
+.professional-resource > p {
+    margin-bottom: 1.25rem;
+}
+
+.resume-downloads {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.resume-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 58px;
+    padding: 0.9rem 1rem;
+    border-left: 4px solid var(--accent-color);
+    background: var(--header-footer-bg);
+    color: var(--text-light);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.resume-download:hover,
+.resume-download:focus-visible {
+    border-color: var(--accent-hover);
+    background: var(--text-dark);
+}
+
+.resume-download:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
+.resume-download__format {
+    flex: 0 0 auto;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+}
+
+.pitch-video-slot {
+    display: grid;
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+    place-content: center;
+    gap: 0.4rem;
+    padding: 1.5rem;
+    border-bottom: 4px solid var(--accent-color);
+    background: var(--header-footer-bg);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.pitch-video-slot__format {
+    justify-self: center;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.pitch-video-slot p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.pitch-video-slot__note {
+    color: var(--body-bg);
+    font-size: 0.9rem;
+}
+
 citation {
     font-style: italic;
     color: var(--accent-color);
