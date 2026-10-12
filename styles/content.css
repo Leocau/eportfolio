@@ -3,11 +3,7 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    background: var(--card-bg);
-    padding: 3rem;
-    border-radius: 10px; /* Coins à peine arrondis pour un côté plus brut */
-    box-shadow: var(--shadow);
-    border-left: 5px solid var(--header-footer-bg);
+    padding: 1.5rem 0 2rem;
 }
 
 .pict {
@@ -37,15 +33,6 @@
 
 .intro-text h1 span {
     color: var(--accent-hover);
-}
-
-.about-section {
-    max-width: 900px;
-    padding: 3rem;
-    border-left: 5px solid var(--header-footer-bg);
-    border-radius: 10px;
-    background: var(--card-bg);
-    box-shadow: var(--shadow);
 }
 
 .about-section p {
@@ -183,7 +170,7 @@ article:hover {
 
 /* --- DÉTAIL D'UN PROJET D'INGÉNIERIE --- */
 .portfolio-page {
-    max-width: 1100px;
+    max-width: 1200px;
     padding: 3.5rem 2rem 5rem;
 }
 
@@ -221,6 +208,11 @@ article:hover {
     max-width: none;
     margin: 0;
     padding: 1.5rem 0;
+}
+
+#a-propos {
+    max-width: none;
+    padding: 1.5rem 0 3rem;
 }
 
 .portfolio-section > h2 {
@@ -394,8 +386,7 @@ article:hover {
 
 /* --- CV AND VIDEO PITCH --- */
 .professional-development {
-    max-width: 1100px;
-    padding: 3.5rem 2rem 5rem;
+    width: 100%;
 }
 
 .professional-development__intro {
