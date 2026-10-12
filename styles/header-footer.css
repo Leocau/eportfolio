@@ -1,5 +1,5 @@
 /* --- EN-TÊTE (Foncé et distinct) --- */
-header {
+body > header {
     position: fixed;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ header {
     padding-inline: max(1rem, calc((100vw - 1440px) / 2));
 }
 
-header > b {
+body > header > b {
     flex: 0 0 auto;
     margin-right: 1rem;
     color: var(--text-light);
