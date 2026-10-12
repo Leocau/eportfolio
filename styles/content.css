@@ -50,11 +50,15 @@
     line-height: 1.8;
 }
 
-.about-section p:first-of-type {
+.about-section .about-lead {
+    max-width: 68ch;
+    margin-bottom: 1.5rem;
     padding-left: 1rem;
     border-left: 3px solid var(--accent-color);
     color: var(--header-footer-bg);
+    font-size: 1.15rem;
     font-weight: 600;
+    line-height: 1.65;
 }
 
 .about-section p:last-child {
