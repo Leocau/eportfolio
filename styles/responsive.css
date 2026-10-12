@@ -3,8 +3,8 @@
     #presentation {
         flex-direction: column;
         text-align: center;
-        border-left: none;
-        border-top: 5px solid var(--header-footer-bg);
+        gap: 1.5rem;
+        padding: 1rem 0 2rem;
     }
 
     .intro-text h1 {
@@ -15,8 +15,8 @@
         font-size: 1.15rem;
     }
 
-    .about-section {
-        padding: 3rem 1rem;
+    #a-propos {
+        padding: 1.5rem 0 2.5rem;
     }
 
     .citation {
@@ -113,10 +113,6 @@
 
     .project-content > .project-description {
         grid-column: auto;
-    }
-
-    .professional-development {
-        padding: 2.5rem 1rem 3rem;
     }
 
     .professional-development__intro h1 {
