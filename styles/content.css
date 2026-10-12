@@ -182,12 +182,12 @@ article:hover {
 }
 
 /* --- DÉTAIL D'UN PROJET D'INGÉNIERIE --- */
-.engineering-page {
+.portfolio-page {
     max-width: 1100px;
     padding: 3.5rem 2rem 5rem;
 }
 
-.engineering-page__intro {
+.portfolio-page__intro {
     max-width: 760px;
     margin-bottom: 2rem;
 }
@@ -205,25 +205,25 @@ article:hover {
     margin-bottom: 0.5rem;
 }
 
-.engineering-page__intro h1 {
+.portfolio-page__intro h1 {
     margin-bottom: 0.75rem;
     color: var(--header-footer-bg);
     font-size: 2.4rem;
     line-height: 1.1;
 }
 
-.engineering-page__intro > p:last-child {
+.portfolio-page__intro > p:last-child {
     max-width: 65ch;
     color: var(--text-dark);
 }
 
-.engineering-page > .engineering-section {
+.portfolio-page > .portfolio-section {
     max-width: none;
     margin: 0;
     padding: 1.5rem 0;
 }
 
-.engineering-section > h2 {
+.portfolio-section > h2 {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
 }
