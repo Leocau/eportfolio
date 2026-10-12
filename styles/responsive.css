@@ -89,4 +89,21 @@
     .project-content > .project-description {
         grid-column: auto;
     }
+
+    .professional-development {
+        padding: 2.5rem 1rem 3rem;
+    }
+
+    .professional-development__intro h1 {
+        font-size: 1.9rem;
+    }
+
+    .professional-resources {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .pitch-video-slot {
+        min-height: 180px;
+    }
 }
