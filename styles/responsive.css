@@ -6,6 +6,23 @@
         border-left: none;
         border-top: 5px solid var(--header-footer-bg);
     }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text h2 {
+        font-size: 1.15rem;
+    }
+
+    .about-section {
+        padding: 3rem 1rem;
+    }
+
+    .citation {
+        text-align: left;
+    }
+
     nav {
         min-height: 60px;
         padding: 0.5rem 1rem;
