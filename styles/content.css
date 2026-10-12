@@ -136,6 +136,161 @@ article:hover {
     text-decoration: underline;
 }
 
+/* --- DÉTAIL D'UN PROJET D'INGÉNIERIE --- */
+.engineering-projects {
+    max-width: 1100px;
+    padding: 3.5rem 2rem 5rem;
+}
+
+.engineering-projects__intro {
+    max-width: 760px;
+    margin-bottom: 2rem;
+}
+
+.project-kicker,
+.project-eyebrow {
+    color: var(--accent-hover);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.project-kicker {
+    margin-bottom: 0.5rem;
+}
+
+.engineering-projects__intro h1 {
+    margin-bottom: 0.75rem;
+    color: var(--header-footer-bg);
+    font-size: 2.4rem;
+    line-height: 1.1;
+}
+
+.engineering-projects__intro > p:last-child {
+    max-width: 65ch;
+    color: var(--text-dark);
+}
+
+.project-container {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--accent-color);
+}
+
+.project-container::before {
+    display: none;
+}
+
+.project-container:hover {
+    border-top-width: 4px;
+    border-top-color: var(--accent-hover);
+}
+
+.project-header {
+    position: static;
+    display: block;
+    width: auto;
+    top: auto;
+    z-index: auto;
+    padding: 2rem 2.25rem;
+    border-bottom: 3px solid var(--accent-color);
+    background: var(--header-footer-bg);
+    color: var(--text-light);
+    box-shadow: none;
+}
+
+.project-eyebrow {
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.project-title {
+    margin: 0;
+    color: var(--text-light);
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.project-header .project-title::before,
+.project-header .project-title::after {
+    display: none;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 2.5rem;
+    padding: 2rem 2.25rem;
+}
+
+.project-content > section {
+    max-width: none;
+    margin: 0;
+    padding: 1.25rem 0 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.project-content > .project-description {
+    grid-column: 1 / -1;
+    padding-top: 0;
+    border-top: 0;
+}
+
+.project-content h3 {
+    margin-bottom: 0.75rem;
+    color: var(--header-footer-bg);
+    font-size: 1.25rem;
+}
+
+.project-description p {
+    max-width: 75ch;
+    line-height: 1.75;
+}
+
+.tags-list,
+.materials-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags-list li {
+    padding: 0.35rem 0.65rem;
+    border-left: 2px solid var(--accent-color);
+    background: var(--body-bg);
+    color: var(--header-footer-bg);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+
+.materials-list li {
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border-color);
+    line-height: 1.5;
+}
+
+.materials-list li:first-child {
+    padding-top: 0;
+}
+
+.materials-list li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.materials-list strong {
+    color: var(--header-footer-bg);
+}
+
 citation {
     font-style: italic;
     color: var(--accent-color);

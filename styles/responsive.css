@@ -63,4 +63,30 @@
         order: 1;
         margin-left: auto;
     }
+
+    .engineering-projects {
+        padding: 2.5rem 1rem 3rem;
+    }
+
+    .engineering-projects__intro h1 {
+        font-size: 1.9rem;
+    }
+
+    .project-header {
+        padding: 1.5rem;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .project-content > .project-description {
+        grid-column: auto;
+    }
 }
