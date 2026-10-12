@@ -20,7 +20,10 @@
     font-size: 1.35rem;
     line-height: 1.3;
 }
-.intro-text h2::before, .intro-text h2::after {
+.intro-text h2::before,
+.intro-text h2::after,
+.professional-resource h2::before,
+.professional-resource h2::after {
     display: none; /* Enlève la ligne technique sur ce titre précis */
 }
 
@@ -174,8 +177,12 @@ article:hover {
     padding: 3.5rem 2rem 5rem;
 }
 
-.portfolio-page__intro {
+.portfolio-page__intro,
+.professional-development__intro {
     max-width: 760px;
+}
+
+.portfolio-page__intro {
     margin-bottom: 2rem;
 }
 
@@ -192,7 +199,8 @@ article:hover {
     margin-bottom: 0.5rem;
 }
 
-.portfolio-page__intro h1 {
+.portfolio-page__intro h1,
+.professional-development__intro h1 {
     margin-bottom: 0.75rem;
     color: var(--header-footer-bg);
     font-size: 2.4rem;
@@ -427,11 +435,6 @@ article:hover {
     margin-bottom: 1rem;
     color: var(--header-footer-bg);
     font-size: 1.6rem;
-}
-
-.professional-resource h2::before,
-.professional-resource h2::after {
-    display: none;
 }
 
 .professional-resource > p {
