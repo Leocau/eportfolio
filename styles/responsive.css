@@ -81,15 +81,15 @@
         margin-left: auto;
     }
 
-    .engineering-page {
+    .portfolio-page {
         padding: 2.5rem 1rem 3rem;
     }
 
-    .engineering-page__intro h1 {
+    .portfolio-page__intro h1 {
         font-size: 1.9rem;
     }
 
-    .engineering-section > h2 {
+    .portfolio-section > h2 {
         font-size: 1.6rem;
     }
 
