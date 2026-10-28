@@ -242,7 +242,7 @@ article:hover {
     border-radius: 4px;
     background: var(--card-bg);
     box-shadow: var(--shadow);
-    transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .portfolio-block::before {
@@ -251,6 +251,7 @@ article:hover {
 
 .portfolio-block:hover {
     border-top-color: var(--accent-hover);
+    box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.2), 0 4px 8px -2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-block__eyebrow {
