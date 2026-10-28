@@ -3,7 +3,7 @@
 
 :root {
     --header-footer-bg: #1e293b; /* Bleu ardoise très foncé, solide et industriel */
-    --body-bg: #f8f8fa; /* Gris clair métallique pour le fond */
+    --body-bg: #ededed; /* Gris clair métallique pour le fond */
     --card-bg: #ffffff; /* Blanc pur pour les blocs de contenu */
     --accent-color: #d97706; /* Orange "cuivre/laiton" pour l'électronique/mécanique */
     --accent-hover: #b45309;
