@@ -33,35 +33,53 @@
         order: 0;
     }
 
-    nav ul {
+    nav > ul {
         position: fixed;
         top: 63px;
         left: 0;
         width: 100%;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         gap: 0;
         padding: 1rem 0;
         background-color: var(--header-footer-bg);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         transform: translateX(-100%);
         visibility: hidden;
+        max-height: calc(100vh - 63px);
+        overflow-y: auto;
         transition: transform 0.3s ease, visibility 0.3s ease;
     }
 
-    nav ul.active {
+    nav > ul.active {
         transform: translateX(0);
         visibility: visible;
     }
 
-    nav ul li {
+    nav > ul > li {
         width: 100%;
         text-align: center;
     }
 
-    nav ul a {
+    nav > ul > li > a {
         display: block;
         padding: 0.75rem 1rem;
+    }
+
+    .nav-submenu {
+        display: flex;
+        position: static;
+        min-width: 0;
+        padding: 0 0 0.5rem;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .nav-submenu a {
+        padding: 0.5rem 1rem;
+        color: var(--border-color);
+        font-size: 0.95rem;
+        font-weight: 400;
     }
 
     .menu-toggle.active .bar:nth-child(1) {

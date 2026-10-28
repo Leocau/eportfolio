@@ -225,6 +225,10 @@ article:hover {
     padding: 1.5rem 0;
 }
 
+main [id] {
+    scroll-margin-top: 110px;
+}
+
 #a-propos {
     max-width: 1500px;
     margin-inline: auto;

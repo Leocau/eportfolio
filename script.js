@@ -1,8 +1,68 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.getElementById('menu-toggle');
     const navLinks = document.getElementById('nav-links');
+    const language = document.documentElement.lang === 'fr' ? 'fr' : 'en';
+    const pageSections = {
+        'welcome.html': [
+            { id: 'presentation', label: { fr: 'Présentation', en: 'Introduction' } },
+            { id: 'a-propos', label: { fr: 'À propos de moi', en: 'About Me' } },
+            { id: 'a-propos-site', label: { fr: 'À propos de ce site', en: 'About This Site' } }
+        ],
+        'engineering.html': [
+            { id: 'engineering-projects-title', label: { fr: 'Projets', en: 'Projects' } },
+            { id: 'engineering-courses-title', label: { fr: 'Cours', en: 'Courses' } }
+        ],
+        'international_mobility.html': [
+            { id: 'mobility-intro-title', label: { fr: 'Projets de mobilité', en: 'Mobility Projects' } },
+            {
+                id: { fr: 'mobility-lv2-title', en: 'mobility-languages-title' },
+                label: { fr: 'Langues parlées', en: 'Languages Spoken' }
+            },
+            { id: 'mobility-title', label: { fr: 'Expériences internationales', en: 'International Experiences' } }
+        ],
+        'civic_engagements.html': [
+            { id: 'civic-engagements-title', label: { fr: 'Mes engagements', en: 'My Engagements' } }
+        ],
+        'sports_and_other_activities.html': [
+            { id: 'activities-title', label: { fr: 'Activités', en: 'Activities' } }
+        ],
+        'professional_development.html': [
+            { id: 'role-models-title', label: { fr: 'Rôles modèles', en: 'Role Models' } },
+            { id: 'resume-title', label: { fr: 'Mon CV', en: 'My Resume' } },
+            { id: 'pitch-title', label: { fr: 'Mon pitch vidéo', en: 'My Video Pitch' } }
+        ],
+        'contact.html': [
+            { id: 'contact', label: { fr: 'Contact', en: 'Contact' } }
+        ]
+    };
 
     if (menuButton && navLinks) {
+        navLinks.querySelectorAll(':scope > li > a').forEach((pageLink) => {
+            const page = pageLink.getAttribute('href').split('#')[0];
+            const sections = pageSections[page];
+
+            if (!sections) {
+                return;
+            }
+
+            const submenu = document.createElement('ul');
+            submenu.className = 'nav-submenu';
+            submenu.setAttribute('aria-label', language === 'fr' ? 'Sections de la page' : 'Page sections');
+            pageLink.parentElement.classList.add('has-submenu');
+
+            sections.forEach((section) => {
+                const sectionId = typeof section.id === 'string' ? section.id : section.id[language];
+                const item = document.createElement('li');
+                const sectionLink = document.createElement('a');
+                sectionLink.href = `${page}#${sectionId}`;
+                sectionLink.textContent = section.label[language];
+                item.append(sectionLink);
+                submenu.append(item);
+            });
+
+            pageLink.parentElement.append(submenu);
+        });
+
         const setMenuOpen = (isOpen) => {
             menuButton.classList.toggle('active', isOpen);
             navLinks.classList.toggle('active', isOpen);

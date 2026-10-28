@@ -57,10 +57,14 @@ nav h1 {
     color: var(--text-light);
 }
 
-nav ul {
+nav > ul {
     display: flex;
     list-style: none;
     gap: 2rem;
+}
+
+nav > ul > li {
+    position: relative;
 }
 
 nav a {
@@ -73,6 +77,43 @@ nav a {
 
 nav a:hover {
     color: var(--accent-color);
+}
+
+.nav-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 13rem;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+    background-color: var(--header-footer-bg);
+    border-top: 2px solid var(--accent-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+}
+
+.has-submenu:hover > .nav-submenu,
+.has-submenu:focus-within > .nav-submenu {
+    display: flex;
+}
+
+.nav-submenu a {
+    display: block;
+    padding: 0.6rem 1rem;
+    white-space: nowrap;
+}
+
+.has-submenu > a::after {
+    content: "";
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0 0 0.2rem 0.45rem;
+    border-right: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
+    transform: rotate(45deg);
 }
 
 .lang-switcher {
