@@ -174,7 +174,8 @@ article:hover {
 /* --- DÉTAIL D'UN PROJET D'INGÉNIERIE --- */
 .portfolio-page {
     max-width: 1500px;
-    padding: 3.5rem 2rem 5rem;
+    margin-inline: auto;
+    padding: 3.5rem var(--page-gutter) 5rem;
 }
 
 .portfolio-page__intro,
@@ -219,8 +220,9 @@ article:hover {
 }
 
 #a-propos {
-    max-width: none;
-    padding: 1.5rem 0 3rem;
+    max-width: 1500px;
+    margin-inline: auto;
+    padding: 1.5rem var(--page-gutter) 3rem;
 }
 
 .portfolio-section > h2 {
@@ -230,7 +232,7 @@ article:hover {
 
 .portfolio-block-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
 }
 

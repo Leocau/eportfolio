@@ -10,6 +10,7 @@
     --text-dark: #334155; /* Gris anthracite pour le texte principal */
     --text-light: #f8fafc; /* Blanc pour le texte sur fond foncé */
     --border-color: #cbd5e1;
+    --page-gutter: 24px;
     --block-radius: 8px;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }

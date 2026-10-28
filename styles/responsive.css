@@ -16,7 +16,7 @@
     }
 
     #a-propos {
-        padding: 1.5rem 0 2.5rem;
+        padding: 1.5rem var(--page-gutter) 2.5rem;
     }
 
     .citation {
@@ -25,7 +25,7 @@
 
     nav {
         min-height: 60px;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0;
     }
 
     .menu-toggle {
@@ -82,7 +82,7 @@
     }
 
     .portfolio-page {
-        padding: 2.5rem 1rem 3rem;
+        padding: 2.5rem var(--page-gutter) 3rem;
     }
 
     .portfolio-section > h2 {
@@ -90,7 +90,7 @@
     }
 
     .portfolio-block-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .project-header {
@@ -123,5 +123,11 @@
 
     .pitch-video-slot {
         min-height: 180px;
+    }
+}
+
+@media (max-width: 560px) {
+    .portfolio-block-grid {
+        grid-template-columns: 1fr;
     }
 }

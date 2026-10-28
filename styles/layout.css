@@ -6,8 +6,9 @@ main {
 
 section {
     padding: 5rem 2rem;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 0 auto;
+    padding-inline: var(--page-gutter);
 }
 
 section h2 {
