@@ -85,11 +85,10 @@
                 <section class="professional-resource" aria-labelledby="pitch-title">
                     <h2 id="pitch-title">My Video Pitch</h2>
                     <p>A short introduction to my background and goals.</p>
-                    <div class="pitch-video-slot" role="img" aria-label="Reserved space for the video pitch">
-                        <span class="pitch-video-slot__format">VIDEO</span>
-                        <p>My video pitch</p>
-                        <span class="pitch-video-slot__note">Video player space</span>
-                    </div>
+                    <video class="pitch-video" controls preload="metadata" playsinline aria-label="My video pitch">
+                        <source src="../photos_and_videos/vid_test.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
                 </section>
             </div>
         </section>

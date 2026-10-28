@@ -121,9 +121,6 @@
         gap: 2rem;
     }
 
-    .pitch-video-slot {
-        min-height: 180px;
-    }
 }
 
 @media (max-width: 560px) {

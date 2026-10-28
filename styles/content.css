@@ -485,39 +485,14 @@ article:hover {
     font-size: 0.9rem;
 }
 
-.pitch-video-slot {
-    display: grid;
+.pitch-video {
+    display: block;
+    width: 100%;
     aspect-ratio: 16 / 9;
-    min-height: 200px;
-    place-content: center;
-    gap: 0.4rem;
-    padding: 1.5rem;
+    object-fit: contain;
     border-radius: var(--block-radius);
     border-bottom: 4px solid var(--accent-color);
     background: var(--header-footer-bg);
-    color: var(--text-light);
-    text-align: center;
-}
-
-.pitch-video-slot__format {
-    justify-self: center;
-    padding: 0.2rem 0.5rem;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-.pitch-video-slot p {
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.pitch-video-slot__note {
-    color: var(--body-bg);
-    font-size: 0.9rem;
 }
 
 .citation {
