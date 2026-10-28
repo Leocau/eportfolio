@@ -487,11 +487,10 @@ article:hover {
 
 .pitch-video {
     display: block;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: contain;
+    width: min(100%, 360px);
+    aspect-ratio: 9 / 16;
+    border: 0;
     border-radius: var(--block-radius);
-    border-bottom: 4px solid var(--accent-color);
     background: var(--header-footer-bg);
 }
 
