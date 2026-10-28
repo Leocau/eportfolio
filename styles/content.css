@@ -34,8 +34,14 @@
     line-height: 1.1;
 }
 
-.intro-text h1 span {
+.welcome-page #presentation .intro-text h1,
+.welcome-page #presentation .intro-text h2 {
+    text-transform: none;
+}
+
+.welcome-page #presentation .intro-text h1 strong {
     color: var(--accent-hover);
+    font-weight: 700;
 }
 
 .about-section p {
@@ -223,6 +229,22 @@ article:hover {
     max-width: 1500px;
     margin-inline: auto;
     padding: 1.5rem var(--page-gutter) 3rem;
+}
+
+.welcome-page > #a-propos,
+.welcome-page > #a-propos-site {
+    max-width: none;
+    margin-inline: 0;
+    padding-inline: 0;
+}
+
+.welcome-page .portfolio-block-grid {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.welcome-page #a-propos .portfolio-block,
+.welcome-page #a-propos-site .portfolio-block {
+    width: 100%;
 }
 
 .portfolio-section > h2 {
