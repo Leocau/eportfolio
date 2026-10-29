@@ -605,8 +605,8 @@ main [id] {
 
 .pitch-video {
     display: block;
-    width: min(100%, 360px);
-    aspect-ratio: 9 / 16;
+    width: min(100%, 560px);
+    aspect-ratio: 16 / 9;
     border: 0;
     border-radius: var(--block-radius);
     background: var(--header-footer-bg);
