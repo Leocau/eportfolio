@@ -15,6 +15,7 @@
 }
 
 .intro-text h2 {
+    display: block;
     margin-bottom: 1rem;
     color: var(--text-dark);
     font-size: 1.35rem;
@@ -51,29 +52,8 @@
     line-height: 1.8;
 }
 
-.about-section .about-lead {
-    max-width: 68ch;
-    margin-bottom: 1.5rem;
-    padding-left: 1rem;
-    border-left: 3px solid var(--accent-color);
-    color: var(--header-footer-bg);
-    font-size: 1.15rem;
-    font-weight: 600;
-    line-height: 1.65;
-}
-
 .about-section p:last-child {
     margin-bottom: 0;
-}
-
-/* --- TIMELINE (Expériences & Études) --- */
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    border-left: 3px solid var(--border-color);
-    padding-left: 2rem;
-    margin-left: 1rem;
 }
 
 article {
@@ -101,80 +81,6 @@ article::before {
 
 article:hover {
     border-top: 3px solid var(--accent-color);
-}
-
-.date {
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--accent-color);
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-/* --- COMPÉTENCES (Badges techniques) --- */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.skill-badge {
-    background: var(--card-bg);
-    color: var(--header-footer-bg);
-    padding: 0.5rem 1.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: 2px;
-    font-weight: 700;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 1.1rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: all 0.2s;
-}
-
-.skill-badge:hover {
-    background: var(--header-footer-bg);
-    color: var(--text-light);
-    border-color: var(--header-footer-bg);
-    transform: translateY(-2px);
-}
-
-/* --- PROJETS --- */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    background: var(--card-bg);
-    padding: 2rem;
-    border-radius: var(--block-radius);
-    box-shadow: var(--shadow);
-    border: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card h3 {
-    color: var(--header-footer-bg);
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-.project-link {
-    margin-top: auto;
-    padding-top: 1.5rem;
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: 'Rajdhani', sans-serif;
-}
-
-.project-link:hover {
-    color: var(--accent-hover);
-    text-decoration: underline;
 }
 
 /* --- DÉTAIL D'UN PROJET D'INGÉNIERIE --- */

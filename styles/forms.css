@@ -9,10 +9,6 @@ form {
     border-top: 4px solid var(--header-footer-bg);
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
 label {
     display: block;
     margin-bottom: 0.5rem;

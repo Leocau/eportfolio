@@ -10,4 +10,5 @@ The main stylesheet is split by category under `styles/`:
 - `forms.css` contains contact form styles.
 - `responsive.css` contains mobile-specific rules.
 
-Pages continue to load `style.css`, which imports these files in cascade order.
+The pages load these files directly in cascade order. `style.css` provides the
+same imports as a single-entry alternative.

@@ -67,7 +67,6 @@
     }
 
     .nav-submenu {
-        display: none;
         position: static;
         min-width: 0;
         padding: 0 0 0.5rem;
