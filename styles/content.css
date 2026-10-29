@@ -246,6 +246,20 @@ main [id] {
     grid-template-columns: minmax(0, 1fr);
 }
 
+.welcome-page .welcome-previews .portfolio-block-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.portfolio-block--link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.portfolio-block--link:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
 .welcome-page #a-propos .portfolio-block,
 .welcome-page #a-propos-site .portfolio-block {
     width: 100%;
@@ -254,6 +268,18 @@ main [id] {
 .portfolio-section > h2 {
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
+}
+
+.portfolio-section__note {
+    font-style: italic;
+}
+
+.portfolio-section__note + .portfolio-section__note {
+    margin-top: 0.75rem;
+}
+
+.portfolio-section__note + .portfolio-block-grid {
+    margin-top: 1.5rem;
 }
 
 .portfolio-block-grid {

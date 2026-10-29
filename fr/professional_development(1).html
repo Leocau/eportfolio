@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léo Cauet | e-Portfolio</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/content.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+    <header id="accueil">
+        <b>Léo Cauet</b>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="nav-links" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="welcome.html">Accueil</a></li>
+                <li><a href="engineering.html">Ingénierie</a></li>
+                <li><a href="international_mobility.html">Mobilité Internationale</a></li>
+                <li><a href="civic_engagements.html">Engagements Citoyens</a></li>
+                <li><a href="sports_and_other_activities.html">Sport et Autres Activités</a></li>
+                <li><a href="professional_development.html">Développement Professionnel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <label for="langSwitcher" class="sr-only">Langue</label>
+                <select id="langSwitcher" aria-label="Sélecteur de langue">
+                    <option value="fr" selected>FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="portfolio-page">
+            <header class="portfolio-page__intro">
+                <p class="project-kicker">Parcours et présentation</p>
+                <h1>Développement professionnel</h1>
+                <p>Retrouvez mon CV dans la langue de votre choix et découvrez mon pitch vidéo.</p>
+            </header>
+        <section class="portfolio-page" aria-labelledby="role-models-title">
+            <header class="portfolio-page__intro professional-development__intro">
+                <h2 id="role-models-title">Rôles modèles</h2>
+            </header>
+        <div class="portfolio-block-grid">
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Rôle modèle 01</p>
+                        <h3 class="portfolio-block__title">Titre de l'expérience</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Rôle modèle 02</p>
+                        <h3 class="portfolio-block__title">Titre de l'expérience</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </article>
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow">Rôle modèle 03</p>
+                        <h3 class="portfolio-block__title">Titre de l'expérience</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+                    </article>
+                </div>
+            </section>
+        <section class="portfolio-page professional-development" aria-labelledby="professional-development-title">
+            <div class="professional-resources">
+                <section class="professional-resource" aria-labelledby="resume-title">
+                    <h2 id="resume-title">Mon CV</h2>
+                    <p>Choisissez la version qui vous convient :</p>
+                    <div class="resume-downloads">
+                        <a class="resume-download" href="../documents/CV_Leo_Cauet_FR.pdf" download="CV-Leo-Cauet-FR.pdf">
+                            <span>CV en français</span>
+                            <span class="resume-download__format">PDF · FR</span>
+                        </a>
+                        <a class="resume-download" href="../documents/CV_Leo_Cauet_EN.pdf" download="CV-Leo-Cauet-EN.pdf">
+                            <span>CV en anglais</span>
+                            <span class="resume-download__format">PDF · EN</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="professional-resource" aria-labelledby="pitch-title">
+                    <h2 id="pitch-title">Mon pitch vidéo</h2>
+                    <p>Une présentation courte de mon parcours et de mes objectifs.</p>
+                    <iframe class="pitch-video" src="https://www.youtube.com/embed/7tiM2MGwDyg" title="Mon pitch vidéo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+            </div>
+        </section>
+    </main>
+       <footer>
+        <p>&copy; 2026 Léo Cauet. Tous droits réservés.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/léo-cauet-058898436" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>

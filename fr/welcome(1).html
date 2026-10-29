@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léo Cauet | e-Portfolio</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/header-footer.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/content.css">
+    <link rel="stylesheet" href="../styles/forms.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+</head>
+<body>
+
+    <header id="accueil">
+        <b>Léo Cauet</b>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="nav-links" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="welcome.html">Accueil</a></li>
+                <li><a href="engineering.html">Ingénierie</a></li>
+                <li><a href="international_mobility.html">Mobilité Internationale</a></li>
+                <li><a href="civic_engagements.html">Engagements Citoyens</a></li>
+                <li><a href="sports_and_other_activities.html">Sports et Autres Activités</a></li>
+                <li><a href="professional_development.html">Développement Professionnel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <label for="langSwitcher" class="sr-only">Langue</label>
+                <select id="langSwitcher" aria-label="Sélecteur de langue">
+                    <option value="fr" selected>FR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="portfolio-page welcome-page">
+        <section id="presentation" class="portfolio-section">
+            <img class="pict" src="photo.jpg" alt="Photo de profil de Léo Cauet">
+            <div class="intro-text">
+                <h1>Bonjour ! Je m'appelle <strong>Léo Cauet</strong>.</h1>
+                <h2>Je suis étudiant à l'<strong>ENSEEIHT</strong> (Toulouse, France) en Electronique, Energie Electrique et Automatique.</h2>
+                <p class="citation">L'art de la structure et du détail.</p>
+            </div>
+        </section>
+
+        <section id="a-propos" class="portfolio-section about-section">
+            <h2>À Propos de Moi</h2>
+            <div class="portfolio-block-grid">
+                    <article class="portfolio-block">
+                        <p class="portfolio-block__eyebrow"></p>
+                        <h3 class="portfolio-block__title"></h3>
+                        <p>
+                            Cette approche guide mon parcours en école d'ingénieurs, où j'attache autant d'importance à la rigueur théorique qu'au passage à la pratique. 
+                            C'est d'ailleurs cet esprit collaboratif et itératif qui me motive au sein du club de robotique : concevoir, tester, ajuster, et voir un projet 
+                            concret aboutir.
+                        </p>
+                        <p>
+                            Cependant, je suis convaincu qu'un futur ingénieur se construit aussi au-delà de la technique. J'ai conçu ce portfolio pour présenter 
+                            mes compétences académiques et mes objectifs professionnels, tout en laissant place à ce qui garantit mon équilibre. Vous y découvrirez ainsi 
+                            mes perspectives de mobilité internationale, ma sensibilité aux enjeux citoyens,
+                            ainsi que mes activités personnelles — à l'image du club de randonnée, qui m'offre une respiration et un recul précieux.
+                            Je vous souhaite une bonne exploration des différentes facettes de mon profil.
+                        </p>
+                    </article>
+            </div>
+        </section>
+        <section id="a-propos-site" class="portfolio-section about-site-section">
+            <h2>À Propos de ce Site</h2>
+            <article class="portfolio-block">
+                <p class="portfolio-block__eyebrow"></p>
+                <h3 class="portfolio-block__title"></h3>
+                <p>
+                    Ce site a été conçu pour présenter mon profil et mes expériences de manière claire et accessible. Il est structuré en différentes sections, chacune mettant en avant un aspect particulier de mon parcours.
+                </p>
+                <p>
+                    Sur ce site, vous trouverez mes projets d'ingénierie sur la page "Ingénierie" et mon pitch vidéo ainsi que mon CV sur la page "Développement Professionnel".
+                </p>
+                <p>
+                    Pour plus d'informations sur ma formation et mes expériences professionnelles, vous pouvez consulter mon profil LinkedIn via le lien dans le pied de page.
+                </p>
+            </article>
+        </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Léo Cauet. Tous droits réservés.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/léo-cauet-058898436" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+</html>
