@@ -120,7 +120,8 @@
     }
 
     .project-content {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
         padding: 1.5rem;
     }
@@ -134,6 +135,11 @@
         grid-row: auto;
         min-height: 0;
         aspect-ratio: 16 / 9;
+    }
+
+    .project-image-placeholder--render {
+        width: min(100%, 720px);
+        aspect-ratio: auto;
     }
 
     .portfolio-page__intro h1,
