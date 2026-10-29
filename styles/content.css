@@ -443,9 +443,15 @@ main [id] {
     object-fit: cover;
 }
 
+.project-image-placeholder--render {
+    border: 0;
+    background: none;
+}
+
 .project-image-placeholder--render img {
     height: 66.667%;
-    object-fit: contain;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 .project-content h3 {
