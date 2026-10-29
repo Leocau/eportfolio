@@ -46,8 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const submenu = document.createElement('ul');
             submenu.className = 'nav-submenu';
+            submenu.id = `nav-submenu-${page.replace(/[^a-z0-9-]/gi, '-')}`;
             submenu.setAttribute('aria-label', language === 'fr' ? 'Sections de la page' : 'Page sections');
             pageLink.parentElement.classList.add('has-submenu');
+            pageLink.setAttribute('aria-controls', submenu.id);
+            pageLink.setAttribute('aria-expanded', 'false');
 
             sections.forEach((section) => {
                 const sectionId = typeof section.id === 'string' ? section.id : section.id[language];
@@ -72,14 +75,47 @@ document.addEventListener('DOMContentLoaded', () => {
                     ? (document.documentElement.lang === 'fr' ? 'Fermer le menu' : 'Close navigation menu')
                     : (document.documentElement.lang === 'fr' ? 'Ouvrir le menu' : 'Open navigation menu')
             );
+
+            if (!isOpen) {
+                navLinks.querySelectorAll('.has-submenu').forEach((item) => {
+                    item.classList.remove('submenu-open');
+                    item.querySelector(':scope > a').setAttribute('aria-expanded', 'false');
+                });
+            }
         };
 
         menuButton.addEventListener('click', () => {
             setMenuOpen(menuButton.getAttribute('aria-expanded') !== 'true');
         });
 
-        navLinks.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', () => setMenuOpen(false));
+        navLinks.addEventListener('click', (event) => {
+            const link = event.target.closest('a');
+
+            if (!link) {
+                return;
+            }
+
+            const submenuItem = link.parentElement;
+            const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+            if (
+                isMobile &&
+                submenuItem.parentElement === navLinks &&
+                submenuItem.classList.contains('has-submenu')
+            ) {
+                if (!submenuItem.classList.contains('submenu-open')) {
+                    event.preventDefault();
+                    navLinks.querySelectorAll('.has-submenu').forEach((item) => {
+                        item.classList.remove('submenu-open');
+                        item.querySelector(':scope > a').setAttribute('aria-expanded', 'false');
+                    });
+                    submenuItem.classList.add('submenu-open');
+                    link.setAttribute('aria-expanded', 'true');
+                    return;
+                }
+            }
+
+            setMenuOpen(false);
         });
 
         document.addEventListener('keydown', (event) => {

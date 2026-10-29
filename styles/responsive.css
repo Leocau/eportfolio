@@ -67,12 +67,20 @@
     }
 
     .nav-submenu {
-        display: flex;
+        display: none;
         position: static;
         min-width: 0;
         padding: 0 0 0.5rem;
         border: 0;
         box-shadow: none;
+    }
+
+    .nav-links .has-submenu:not(.submenu-open) > .nav-submenu {
+        display: none;
+    }
+
+    .nav-links .has-submenu.submenu-open > .nav-submenu {
+        display: flex;
     }
 
     .nav-submenu a {
