@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         'engineering.html': [
             { id: 'engineering-projects-title', label: { fr: 'Projets', en: 'Projects' } },
-            { id: 'engineering-courses-title', label: { fr: 'Cours', en: 'Courses' } }
+            { id: 'engineering-courses-title', label: { fr: 'Vœux d\'option', en: 'Option Choices' } }
         ],
         'international_mobility.html': [
             { id: 'mobility-intro-title', label: { fr: 'Projets de mobilité', en: 'Mobility Projects' } },
