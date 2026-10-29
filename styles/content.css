@@ -443,6 +443,11 @@ main [id] {
     object-fit: cover;
 }
 
+.project-image-placeholder--render img {
+    height: 66.667%;
+    object-fit: contain;
+}
+
 .project-content h3 {
     margin-bottom: 0.75rem;
     color: var(--header-footer-bg);

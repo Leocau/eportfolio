@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pageSections = {
         'welcome.html': [
             { id: 'presentation', label: { fr: 'Présentation', en: 'Introduction' } },
-            { id: 'a-propos', label: { fr: 'À propos de moi', en: 'About Me' } },
+            { id: 'a-propos', label: { fr: 'À découvrir', en: 'Explore' } },
             { id: 'a-propos-site', label: { fr: 'À propos de ce site', en: 'About This Site' } }
         ],
         'engineering.html': [
@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'activities-title', label: { fr: 'Activités', en: 'Activities' } }
         ],
         'professional_development.html': [
-            { id: 'role-models-title', label: { fr: 'Rôles modèles', en: 'Role Models' } },
             { id: 'resume-title', label: { fr: 'Mon CV', en: 'My Resume' } },
             { id: 'pitch-title', label: { fr: 'Mon pitch vidéo', en: 'My Video Pitch' } }
         ],
