@@ -108,6 +108,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const footerLinks = document.querySelector('footer > div');
+
+    if (footerLinks) {
+        footerLinks.classList.add('footer-links');
+
+        const createContactLink = (href, label, iconPaths) => {
+            const link = document.createElement('a');
+            link.className = 'footer-contact-link';
+            link.href = href;
+
+            const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            icon.setAttribute('viewBox', '0 0 24 24');
+            icon.setAttribute('width', '18');
+            icon.setAttribute('height', '18');
+            icon.setAttribute('fill', 'none');
+            icon.setAttribute('stroke', 'currentColor');
+            icon.setAttribute('stroke-width', '1.8');
+            icon.setAttribute('stroke-linecap', 'round');
+            icon.setAttribute('stroke-linejoin', 'round');
+            icon.setAttribute('aria-hidden', 'true');
+            icon.setAttribute('focusable', 'false');
+
+            iconPaths.forEach((pathData) => {
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', pathData);
+                icon.append(path);
+            });
+
+            link.append(icon, document.createTextNode(label));
+            return link;
+        };
+
+        footerLinks.append(
+            createContactLink(
+                'tel:+33640333020',
+                '+33 6 40 33 30 20',
+                ['M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.58 2.8.7a2 2 0 0 1 1.72 2.04z']
+            ),
+            createContactLink(
+                'mailto:lcauet22@gmail.com',
+                'lcauet22@gmail.com',
+                ['M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z', 'm22 6-10 7L2 6']
+            ),
+            createContactLink(
+                'mailto:leo.cauet@etu.inp-n7.fr',
+                'leo.cauet@etu.inp-n7.fr',
+                ['M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z', 'm22 6-10 7L2 6']
+            )
+        );
+    }
+
     const contactForms = document.querySelectorAll('[data-contact-form]');
 
     contactForms.forEach((form) => {
