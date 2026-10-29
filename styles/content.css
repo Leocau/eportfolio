@@ -444,14 +444,22 @@ main [id] {
 }
 
 .project-image-placeholder--render {
+    align-self: start;
+    justify-self: center;
+    width: min(100%, 720px);
+    min-height: 0;
+    aspect-ratio: auto;
+    display: block;
     border: 0;
     background: none;
 }
 
 .project-image-placeholder--render img {
-    height: 66.667%;
+    display: block;
+    max-width: 100%;
+    height: auto;
     border-radius: 6px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .project-content h3 {
